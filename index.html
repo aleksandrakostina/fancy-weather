@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancy-weather</title>
+  <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="header__button-panel">
+        <button class="button button_refresh">
+          <span class="refresh"></span>
+        </button>
+        <div class="lang-switcher">
+          <button class="button button_dropdown">
+            <span class="lang">EN</span>
+          </button>
+          <div class="langs__container">
+            <div class="langs__list">
+              <button class="button button_lang langs__item">EN</button>
+              <button class="button button_lang langs__item button_inactive">RU</button>
+              <button class="button button_lang langs__item button_inactive">BE</button>
+            </div>
+          </div>
+        </div>
+        <div class="temperature">
+          <button class="button button_temp button_temp-C">°C</button>
+          <button class="button button_temp button_temp-F button_inactive">°F</button>
+        </div>
+      </div>
+      <div class="header__search-panel">
+        <form class="search-form">
+          <div class="search">
+            <input class="input" placeholder="Search city or ZIP">
+            <span class="voice"></span>
+          </div>          
+          <button class="button button_search" type="submit">Search</button>
+        </form>       
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+      <div class="weather"></div>
+      <div class="map"></div>
+    </div> 
+  </main>
+  <script src="dist/script.js"></script>
+</body>
+</html>

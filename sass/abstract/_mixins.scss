@@ -1,0 +1,15 @@
+@mixin font ($size, $height: $size, $weight: 600, $style: normal, $font-family: 'Montserrat') {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+  font-family: $font-family;
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-big-mobile {
+  @media (max-width: $big-mobile-width) { @content; }
+}

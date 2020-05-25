@@ -1,0 +1,39 @@
+.header__button-panel {
+  display: flex;
+   >* {
+    margin-right: 10px;
+  }
+}
+
+.temperature {
+  font-size: 0;
+}
+
+.refresh {
+  width: 15px;
+  height: 20px;
+  display: block;
+  background: url('./../assets/images/refresh.svg') 50% no-repeat;
+  
+  &_active {
+    animation: spin 1.4s ease-in-out;
+    animation-name: refresh;
+  }
+}
+
+@keyframes refresh {
+  0% {
+    transform: rotate(0);
+  }
+  80% {
+    transform: rotate(400deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+
+
+
+

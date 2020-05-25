@@ -1,0 +1,27 @@
+.lang {
+  &:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url('./../assets/images/arrow.svg') 50% no-repeat;
+    margin-left: 5px;
+  }
+
+  &_active:after {
+    transform: scaleY(-1);
+  }
+}
+
+.langs__container {
+  display: none;
+}
+
+.langs__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.langs__container_active {
+  display: block;
+}
